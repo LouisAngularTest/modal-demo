@@ -1,0 +1,16 @@
+<button class="btn btn-primary" (click)="open()">Open Modal</button>
+<div class="modal-container" [ngClass]="{'modal-close': isClose}">
+  <div class="modal-title">
+    <ng-content select=".modal-title-wrapper"></ng-content>
+  </div>
+  <div class="modal-body">
+    <ng-content select=".modal-body-wrapper"></ng-content>
+  </div>
+  <div class="modal-buttons">
+    <button class="btn btn-primary">Confirm</button>
+    <button class="btn btn-danger" (click)="close()">Cancel</button>
+  </div>
+</div>
+<div class="overlay" [ngClass]="{'modal-close': isClose}">
+
+</div>
