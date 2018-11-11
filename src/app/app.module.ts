@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ModalComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ModalComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
